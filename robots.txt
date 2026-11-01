@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://delosreyestomanthony.github.io/sitemap.xml
