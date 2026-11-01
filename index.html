@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..600&family=Instrument+Sans:wght@400..600&display=swap">
-  <link rel="stylesheet" href="assets/css/site.css?v=1">
+  <link rel="stylesheet" href="assets/css/site.css?v=2">
   <link rel="preload" as="image" href="assets/img/portrait-368.jpg">
   <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
@@ -61,30 +61,34 @@
 
   <main id="main">
     <!-- ───────── HERO ───────── -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
+    <section class="hero2" id="top" aria-labelledby="hero-title">
       <div class="wrap">
-        <div class="hero-panel">
-          <div class="hero-copy">
-            <span class="label">E-Commerce &amp; Social Media Manager</span>
-            <h1 id="hero-title">Online stores, websites, and events that run on schedule.</h1>
+        <div class="hero2-grid">
+          <div>
+            <span class="pill">E-Commerce &amp; Social Media Manager · Remote</span>
+            <h1 id="hero-title">Online stores, websites, and events <span class="soft">that run on schedule.</span></h1>
             <p class="hero-lead">I’m Tom Anthony Delos Reyes. I help small teams list and sell products, track every order, keep websites, blogs, and newsletters current, and organize events and executive calendars.</p>
             <div class="hero-actions">
               <a class="btn btn--accent" href="#work">View my work <span class="arrow" aria-hidden="true">→</span></a>
-              <a class="btn" href="mailto:delosreyestomanthony@gmail.com">Email me</a>
+              <a class="btn" href="assets/files/Tom-Anthony-Delos-Reyes-Resume.pdf" download>Download résumé <span class="visually-hidden">(PDF, 75 KB)</span></a>
             </div>
-            <p class="hero-meta">
-              <span>Remote from Cagayan de Oro City, Philippines</span>
-              <span>Remote roles since 2021</span>
-              <a href="assets/files/Tom-Anthony-Delos-Reyes-Resume.pdf" download>Résumé (PDF, 75 KB)</a>
-            </p>
+            <dl class="stats">
+              <div class="stat"><dt class="visually-hidden">Remote experience</dt><dd><b>5+ yrs</b><span>Remote work since 2021</span></dd></div>
+              <div class="stat"><dt class="visually-hidden">Companies</dt><dd><b>4</b><span>Companies supported</span></dd></div>
+              <div class="stat"><dt class="visually-hidden">Work samples</dt><dd><b>21</b><span>Work samples below</span></dd></div>
+              <div class="stat"><dt class="visually-hidden">Certifications</dt><dd><b>3</b><span>Marketing and data certifications</span></dd></div>
+            </dl>
           </div>
-          <figure class="hero-photo">
-            <img src="assets/img/portrait-368.jpg" width="368" height="356" alt="Tom Anthony Delos Reyes in a white shirt and black tie against a muted mauve background." fetchpriority="high">
-            <figcaption><strong>Tom Anthony Delos Reyes</strong>Cagayan de Oro City, Philippines</figcaption>
+          <figure class="profile">
+            <div class="profile-photo"><img src="assets/img/portrait-368.jpg" width="368" height="356" alt="Tom Anthony Delos Reyes in a white shirt and black tie against a muted mauve background." fetchpriority="high"></div>
+            <figcaption>
+              <div><strong>Tom Anthony Delos Reyes</strong><span>Cagayan de Oro City, Philippines · UTC+8</span></div>
+              <a class="icon-link" href="mailto:delosreyestomanthony@gmail.com" aria-label="Email Tom Anthony"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+            </figcaption>
           </figure>
         </div>
 
-        <div class="card trust">
+        <div class="clients">
           <p>Experience with</p>
           <ul>
             <li>ShoeCollection by Memsh</li>
@@ -101,67 +105,47 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="label">Services</span>
+            <span class="section-index">Services</span>
             <h2 id="services-title">What I can take off your plate</h2>
           </div>
-          <p>Most of my roles have combined several of these. Each card links to real examples in the collection below.</p>
+          <p>Most of my roles combined several of these. Select a service to see real examples of it.</p>
         </div>
-        <div class="services-grid">
-          <article class="card service">
-            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1.5 12h-13z"/><path d="M9 7a3 3 0 016 0"/></svg></span>
-            <h3>E-commerce support</h3>
-            <p>Create product listings, prepare customer invoices, and run the online store day to day.</p>
-            <p class="tools">Etsy · Google Sheets · Canva</p>
-            <a class="text-link" href="#collection" data-show-filter="ecommerce">See examples <span class="arrow" aria-hidden="true">→</span></a>
+        <div class="services-grid v2">
+          <article class="card service v2 reveal">
+            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1.5 12h-13z"/><path d="M9 7a3 3 0 016 0"/></svg></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            <h3><a href="#collection" data-show-filter="ecommerce">E-commerce operations</a></h3>
+            <p>Product listings, customer invoices, and order tracking from payment to delivery.</p>
+            <ul class="chips"><li>Etsy</li><li>Google Sheets</li><li>Trello</li></ul>
           </article>
-          <article class="card service">
-            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/><circle cx="19" cy="18" r="2"/></svg></span>
-            <h3>Order tracking &amp; operations</h3>
-            <p>Track every order from confirmation and payment through shipping and delivery.</p>
-            <p class="tools">Trello · Google Sheets · Google Workspace</p>
-            <a class="text-link" href="#collection" data-show-filter="ops">See examples <span class="arrow" aria-hidden="true">→</span></a>
+          <article class="card service v2 reveal">
+            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            <h3><a href="#collection" data-show-filter="web">Websites &amp; directories</a></h3>
+            <p>Build and update websites and member directories, and keep every page current.</p>
+            <ul class="chips"><li>Website builders</li><li>Canva</li><li>Photoshop</li></ul>
           </article>
-          <article class="card service">
-            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></span>
-            <h3>Website design &amp; updates</h3>
-            <p>Build and update websites, member directories, and blog pages, and keep content current.</p>
-            <p class="tools">Website builders · Canva · Adobe Photoshop</p>
-            <a class="text-link" href="#collection" data-show-filter="web">See examples <span class="arrow" aria-hidden="true">→</span></a>
+          <article class="card service v2 reveal">
+            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            <h3><a href="#collection" data-show-filter="content">Blogs &amp; newsletters</a></h3>
+            <p>Publish blog articles and prepare newsletter batches with features and member spotlights.</p>
+            <ul class="chips"><li>Blog CMS</li><li>Email newsletters</li></ul>
           </article>
-          <article class="card service">
-            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-            <h3>Blogs &amp; newsletters</h3>
-            <p>Publish blog articles and prepare newsletter batches with features, highlights, and links back to the site.</p>
-            <p class="tools">Blog CMS · Email newsletters · Canva</p>
-            <a class="text-link" href="#collection" data-show-filter="content">See examples <span class="arrow" aria-hidden="true">→</span></a>
+          <article class="card service v2 reveal">
+            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h3"/></svg></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            <h3><a href="#collection" data-show-filter="events">Events &amp; outreach</a></h3>
+            <p>Eventbrite events with scheduled reminders, LinkedIn events, and attendee outreach.</p>
+            <ul class="chips"><li>Eventbrite</li><li>LinkedIn</li><li>Zoom</li></ul>
           </article>
-          <article class="card service">
-            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h3"/></svg></span>
-            <h3>Events &amp; outreach</h3>
-            <p>Set up Eventbrite events with scheduled reminders, create LinkedIn events, and invite attendees.</p>
-            <p class="tools">Eventbrite · LinkedIn · Zoom</p>
-            <a class="text-link" href="#collection" data-show-filter="events">See examples <span class="arrow" aria-hidden="true">→</span></a>
+          <article class="card service v2 reveal">
+            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            <h3><a href="#collection" data-show-filter="creative">Social media &amp; design</a></h3>
+            <p>Social content, event flyers, member and sponsor layouts, mockups, and brochures.</p>
+            <ul class="chips"><li>Canva</li><li>Photoshop</li><li>CapCut</li><li>Meta Business Suite</li></ul>
           </article>
-          <article class="card service">
-            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg></span>
-            <h3>Social media &amp; graphics</h3>
-            <p>Create social content, event flyers, member and sponsor layouts, mockups, and brochures.</p>
-            <p class="tools">Canva · Adobe Photoshop · CapCut · Meta Business Suite</p>
-            <a class="text-link" href="#collection" data-show-filter="creative">See examples <span class="arrow" aria-hidden="true">→</span></a>
-          </article>
-          <article class="card service">
-            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
-            <h3>Executive &amp; admin support</h3>
-            <p>Coordinate schedules and meetings, manage email correspondence, and keep projects on track.</p>
-            <p class="tools">Google Workspace · Microsoft Office · AI tools</p>
-            <a class="text-link" href="#experience">See experience <span class="arrow" aria-hidden="true">→</span></a>
-          </article>
-          <article class="card service service--cta">
-            <div>
-              <h3>Need a mix of these?</h3>
-              <p style="margin-top:0.75rem">Tell me what’s on your list, and I’ll reply with how I’d handle it.</p>
-            </div>
-            <a class="btn" href="mailto:delosreyestomanthony@gmail.com?subject=Working%20together">Email me <span class="arrow" aria-hidden="true">→</span></a>
+          <article class="card service v2 reveal">
+            <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            <h3><a href="#experience">Executive support</a></h3>
+            <p>Calendars and meetings, email correspondence, and keeping projects on track.</p>
+            <ul class="chips"><li>Google Workspace</li><li>Microsoft Office</li></ul>
           </article>
         </div>
       </div>
@@ -172,47 +156,51 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="label">Selected work</span>
-            <h2 id="work-title">Projects across e-commerce, web, content, and events</h2>
+            <span class="section-index">Selected work</span>
+            <h2 id="work-title">Four projects, start to finish</h2>
           </div>
-          <p>Four project write-ups with my role and deliverables, then every example in one filterable collection.</p>
+          <p>Each project page shows my role, what I delivered, and the original screenshots.</p>
         </div>
 
-        <div class="featured-grid">
-          <article class="card project-card">
-            <div class="frame frame--fit"><img src="assets/img/shop-etsy-800.jpg" srcset="assets/img/shop-etsy-800.jpg 800w, assets/img/shop-etsy-1280.jpg 1280w" sizes="(max-width: 760px) 92vw, 600px" width="800" height="450" alt="Etsy Shop Manager listing grid with custom T-shirts and jerseys." loading="lazy"></div>
-            <div class="project-body">
-              <div class="project-meta"><span class="tag tag--accent">E-commerce</span><span class="tag">Operations</span><span class="tag">Design</span></div>
+        <div class="features">
+          <article class="card feature reveal">
+            <div class="feature-media"><div class="frame"><img src="assets/img/shop-etsy-800.jpg" srcset="assets/img/shop-etsy-800.jpg 800w, assets/img/shop-etsy-1280.jpg 1280w" sizes="(max-width: 860px) 80vw, 640px" width="800" height="450" alt="Etsy Shop Manager listing grid with custom T-shirts and jerseys." loading="lazy"></div></div>
+            <div class="feature-body">
+              <span class="num">Top Tier Print Company · 2024–2025</span>
               <h3><a href="work/top-tier-print.html">Online store and order operations</a></h3>
-              <p>Etsy listings, customer invoices, and order tracking in Trello and Google Sheets, plus brand mockups and a brochure.</p>
-              <p class="project-role"><span><b>Social Media Manager &amp; EA</b> · 2024–2025</span><span class="go">View project <span class="arrow" aria-hidden="true">→</span></span></p>
+              <p>Running a custom-print shop’s online side, from the listing to the delivered order.</p>
+              <ul class="deliv"><li>Etsy product listings</li><li>Itemized customer invoices</li><li>Order tracking in Trello and Google Sheets</li></ul>
+              <p class="feature-foot"><span><b>Social Media Manager &amp; EA</b></span><span class="go">View project <span class="arrow" aria-hidden="true">→</span></span></p>
             </div>
           </article>
-          <article class="card project-card">
-            <div class="frame frame--fit"><img src="assets/img/web-referral-navigator-800.jpg" srcset="assets/img/web-referral-navigator-800.jpg 800w, assets/img/web-referral-navigator-1347.jpg 1347w" sizes="(max-width: 760px) 92vw, 600px" width="800" height="374" alt="TheReferralNavigator.com home page with a purple-tinted photo and the headline “More and better referrals.”" loading="lazy"></div>
-            <div class="project-body">
-              <div class="project-meta"><span class="tag tag--accent">Websites</span><span class="tag">Directory</span></div>
+          <article class="card feature reveal">
+            <div class="feature-media"><div class="frame"><img src="assets/img/web-referral-navigator-800.jpg" srcset="assets/img/web-referral-navigator-800.jpg 800w, assets/img/web-referral-navigator-1347.jpg 1347w" sizes="(max-width: 860px) 80vw, 640px" width="800" height="374" alt="TheReferralNavigator.com home page with a purple-tinted photo and the headline “More and better referrals.”" loading="lazy"></div></div>
+            <div class="feature-body">
+              <span class="num">The Referral Navigator · 2023–2024</span>
               <h3><a href="work/referral-network.html">Websites for a referral network</a></h3>
-              <p>Three websites and a member directory for The Referral Navigator and two attorney roundtables.</p>
-              <p class="project-role"><span><b>Marketing Virtual Assistant</b> · 2023–2024</span><span class="go">View project <span class="arrow" aria-hidden="true">→</span></span></p>
+              <p>A public home for the network and a site for each of its two attorney roundtables.</p>
+              <ul class="deliv"><li>TheReferralNavigator.com</li><li>Attorney Rainmakers and Esquire roundtable sites</li><li>Member business directory</li></ul>
+              <p class="feature-foot"><span><b>Marketing Virtual Assistant</b></span><span class="go">View project <span class="arrow" aria-hidden="true">→</span></span></p>
             </div>
           </article>
-          <article class="card project-card">
-            <div class="frame"><img src="assets/img/event-sponsors-700.jpg" srcset="assets/img/event-sponsors-700.jpg 700w, assets/img/event-sponsors-1414.jpg 1414w" sizes="(max-width: 760px) 92vw, 600px" width="700" height="990" alt="Event Sponsors layout for the Figure Eight Dealmakers Roundtable, with a glass skyscraper header." loading="lazy"></div>
-            <div class="project-body">
-              <div class="project-meta"><span class="tag tag--accent">Events</span><span class="tag">Outreach</span><span class="tag">Design</span></div>
+          <article class="card feature reveal">
+            <div class="feature-media"><div class="frame"><img src="assets/img/event-sponsors-700.jpg" srcset="assets/img/event-sponsors-700.jpg 700w, assets/img/event-sponsors-1414.jpg 1414w" sizes="(max-width: 860px) 60vw, 360px" width="700" height="990" alt="Event Sponsors layout for the Figure Eight Dealmakers Roundtable, with a glass skyscraper header." loading="lazy"></div></div>
+            <div class="feature-body">
+              <span class="num">The Referral Navigator · 2023–2024</span>
               <h3><a href="work/roundtable-events.html">Event operations for professional roundtables</a></h3>
-              <p>Eventbrite setup, scheduled reminder emails, LinkedIn events and outreach, plus flyers and member and sponsor layouts.</p>
-              <p class="project-role"><span><b>Marketing Virtual Assistant</b> · 2023–2024</span><span class="go">View project <span class="arrow" aria-hidden="true">→</span></span></p>
+              <p>Keeping a calendar of online roundtables filled, reminded, and promoted.</p>
+              <ul class="deliv"><li>Eventbrite events with scheduled email batches</li><li>LinkedIn events and outreach</li><li>Flyers, member and sponsor layouts</li></ul>
+              <p class="feature-foot"><span><b>Marketing Virtual Assistant</b></span><span class="go">View project <span class="arrow" aria-hidden="true">→</span></span></p>
             </div>
           </article>
-          <article class="card project-card">
-            <div class="frame frame--fit"><img src="assets/img/web-ert-blog-404.jpg" width="404" height="629" alt="Esquire Roundtable “Articles and Videos” page: a grid of article cards with photos of attorneys." loading="lazy"></div>
-            <div class="project-body">
-              <div class="project-meta"><span class="tag tag--accent">Blogs</span><span class="tag">Newsletters</span></div>
+          <article class="card feature reveal">
+            <div class="feature-media"><div class="frame"><img src="assets/img/web-ert-blog-404.jpg" width="404" height="629" alt="Esquire Roundtable “Articles and Videos” page: a grid of article cards with photos of attorneys." loading="lazy"></div></div>
+            <div class="feature-body">
+              <span class="num">The Referral Navigator · 2023–2024</span>
               <h3><a href="work/blogs-newsletters.html">Blog and newsletter content</a></h3>
-              <p>Blog pages for the network and both roundtables, and batches of “The Sextant” newsletter.</p>
-              <p class="project-role"><span><b>Marketing Virtual Assistant</b> · 2023–2024</span><span class="go">View project <span class="arrow" aria-hidden="true">→</span></span></p>
+              <p>Keeping three sites publishing and members informed between events.</p>
+              <ul class="deliv"><li>Blog pages for all three sites</li><li>“The Sextant” newsletter batches</li><li>Member spotlights and directory promotion</li></ul>
+              <p class="feature-foot"><span><b>Marketing Virtual Assistant</b></span><span class="go">View project <span class="arrow" aria-hidden="true">→</span></span></p>
             </div>
           </article>
         </div>
@@ -234,90 +222,90 @@
           </div>
           <p class="filter-status" data-filter-status aria-live="polite"></p>
 
-          <ul class="collection-grid" data-collection data-gallery>
+          <ul class="collection-grid v2" data-collection data-gallery>
             <li class="card item" data-cat="ecommerce">
               <a class="frame" data-lightbox href="assets/img/shop-etsy-1280.jpg" data-title="Etsy product listings" data-caption="Product listings in Etsy Shop Manager."><img src="assets/img/shop-etsy-800.jpg" width="800" height="450" loading="lazy" alt="Etsy Shop Manager listing grid with custom T-shirts and jerseys."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4>Etsy product listings</h4><p>Product listings with photos, titles, and pricing.</p><a class="text-link" href="work/top-tier-print.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4><a href="work/top-tier-print.html">Etsy product listings</a></h4></div>
             </li>
             <li class="card item" data-cat="ecommerce ops">
               <a class="frame" data-lightbox href="assets/img/shop-invoice-1280.jpg" data-title="Customer invoices" data-caption="Invoice prepared in Google Sheets. Customer details and tab names are blurred for privacy."><img src="assets/img/shop-invoice-800.jpg" width="800" height="365" loading="lazy" alt="Top Tier Print Company invoice in Google Sheets with itemized T-shirt orders, sizes, prices, and balance due."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4>Customer invoices</h4><p>Itemized invoices with sizes, colors, quantities, tax, and balance due.</p><a class="text-link" href="work/top-tier-print.html#invoices">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4><a href="work/top-tier-print.html#invoices">Customer invoices</a></h4></div>
             </li>
             <li class="card item" data-cat="ops ecommerce">
               <a class="frame" data-lightbox href="assets/img/ops-trello-1280.jpg" data-title="Order tracking in Trello" data-caption="One list per order, from pending to delivered. Customer names are blurred for privacy."><img src="assets/img/ops-trello-800.jpg" width="800" height="361" loading="lazy" alt="Trello board titled Order Tracking, with one list per order and stages from Pending to Delivered."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4>Order tracking in Trello</h4><p>Orders monitored from pending through shipping and delivery.</p><a class="text-link" href="work/top-tier-print.html#tracking">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4><a href="work/top-tier-print.html#tracking">Order tracking in Trello</a></h4></div>
             </li>
             <li class="card item" data-cat="ops ecommerce">
               <a class="frame" data-lightbox href="assets/img/ops-sheets-1280.jpg" data-title="Order tracking in Google Sheets" data-caption="Order details, confirmation, payment, status, dates, and invoice numbers. Customer names are blurred for privacy."><img src="assets/img/ops-sheets-800.jpg" width="800" height="349" loading="lazy" alt="Google Sheets order tracker with columns for order description, confirmation, payment, status, dates, remarks, and invoice number."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4>Order tracking in Google Sheets</h4><p>Confirmation, payment, and status for every order in one sheet.</p><a class="text-link" href="work/top-tier-print.html#tracking">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4><a href="work/top-tier-print.html#tracking">Order tracking in Google Sheets</a></h4></div>
             </li>
             <li class="card item" data-cat="creative ecommerce">
               <a class="frame" data-lightbox href="assets/img/shop-mockups-1280.jpg" data-title="Brand layouts and mockups" data-caption="Merchandise mockups for Top Tier Print Company."><img src="assets/img/shop-mockups-800.jpg" width="800" height="450" loading="lazy" alt="Merchandise mockups: notebooks, polo shirts, T-shirts, and jackets carrying a logo."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4>Brand layouts and mockups</h4><p>Merchandise mockups showing a logo on apparel and notebooks.</p><a class="text-link" href="work/top-tier-print.html#design">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4><a href="work/top-tier-print.html#design">Brand layouts and mockups</a></h4></div>
             </li>
             <li class="card item" data-cat="creative">
               <a class="frame" data-lightbox href="assets/img/shop-brochure-1280.jpg" data-title="Brochure design" data-caption="Brochure design for Top Tier Print Company."><img src="assets/img/shop-brochure-800.jpg" width="800" height="450" loading="lazy" alt="Brochure spread with western-themed photos and sections titled Who We Are, What We Offer, and Our Vision."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4>Brochure design</h4><p>Multi-panel brochure layout.</p><a class="text-link" href="work/top-tier-print.html#design">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">Top Tier Print Company</span><h4><a href="work/top-tier-print.html#design">Brochure design</a></h4></div>
             </li>
             <li class="card item" data-cat="web">
               <a class="frame" data-lightbox href="assets/img/web-referral-navigator-1347.jpg" data-title="TheReferralNavigator.com" data-caption="Website for The Referral Navigator."><img src="assets/img/web-referral-navigator-800.jpg" width="800" height="374" loading="lazy" alt="TheReferralNavigator.com home page with the headline “More and better referrals.”"><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>TheReferralNavigator.com</h4><p>Website with pages for attendees, hosts, the directory, events, and the blog.</p><a class="text-link" href="work/referral-network.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/referral-network.html">TheReferralNavigator.com</a></h4></div>
             </li>
             <li class="card item" data-cat="web">
               <a class="frame" data-lightbox href="assets/img/web-attorney-rainmakers-1350.jpg" data-title="AttorneyRainmakersRoundtable.com" data-caption="Website for the Attorney Rainmakers Roundtable."><img src="assets/img/web-attorney-rainmakers-800.jpg" width="800" height="374" loading="lazy" alt="AttorneyRainmakersRoundtable.com: dark navy page describing the roundtable for attorneys."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>AttorneyRainmakersRoundtable.com</h4><p>Website for an attorney roundtable.</p><a class="text-link" href="work/referral-network.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/referral-network.html">AttorneyRainmakersRoundtable.com</a></h4></div>
             </li>
             <li class="card item" data-cat="web">
               <a class="frame" data-lightbox href="assets/img/web-esquire-1349.jpg" data-title="EsquireRoundtable.com" data-caption="Website for the Esquire Roundtable."><img src="assets/img/web-esquire-800.jpg" width="800" height="374" loading="lazy" alt="EsquireRoundtable.com: dark navy page with a “Why attorneys should join” section."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>EsquireRoundtable.com</h4><p>Website for a second attorney roundtable.</p><a class="text-link" href="work/referral-network.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/referral-network.html">EsquireRoundtable.com</a></h4></div>
             </li>
             <li class="card item" data-cat="web">
               <a class="frame" data-lightbox href="assets/img/web-directory-318.jpg" data-title="Business directory" data-caption="Member directory page. The original capture is 318 px wide."><img src="assets/img/web-directory-318.jpg" width="318" height="628" loading="lazy" alt="Business directory page: a grid of member headshots with names and contact icons."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Business directory</h4><p>Member directory with photos, names, and contact links.</p><a class="text-link" href="work/referral-network.html#directory">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/referral-network.html#directory">Business directory</a></h4></div>
             </li>
             <li class="card item" data-cat="content web">
               <a class="frame" data-lightbox href="assets/img/web-ert-blog-404.jpg" data-title="Esquire Roundtable articles page" data-caption="“Articles and Videos” page. The original capture is 404 px wide."><img src="assets/img/web-ert-blog-404.jpg" width="404" height="629" loading="lazy" alt="Esquire Roundtable “Articles and Videos” page: a grid of article cards with photos of attorneys."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">Esquire Roundtable</span><h4>Articles and videos page</h4><p>Blog grid with an article card for each post.</p><a class="text-link" href="work/blogs-newsletters.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">Esquire Roundtable</span><h4><a href="work/blogs-newsletters.html">Articles and videos page</a></h4></div>
             </li>
             <li class="card item" data-cat="content web">
               <a class="frame" data-lightbox href="assets/img/web-arr-blog-315.jpg" data-title="Attorney Rainmakers blog" data-caption="Blog grid for the Attorney Rainmakers Roundtable. The original capture is 315 px wide."><img src="assets/img/web-arr-blog-315.jpg" width="315" height="525" loading="lazy" alt="Attorney Rainmakers Roundtable blog: nine article cards with photos of attorneys and short excerpts."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">Attorney Rainmakers Roundtable</span><h4>Roundtable blog</h4><p>Nine-article blog grid with a consistent card for each post.</p><a class="text-link" href="work/blogs-newsletters.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">Attorney Rainmakers Roundtable</span><h4><a href="work/blogs-newsletters.html">Roundtable blog</a></h4></div>
             </li>
             <li class="card item" data-cat="content web">
               <a class="frame" data-lightbox href="assets/img/web-blog-315.jpg" data-title="Referral Navigator blog page" data-caption="Blog page. The original capture is 315 px wide."><img src="assets/img/web-blog-315.jpg" width="315" height="525" loading="lazy" alt="Blog page: a grid of article cards with photos and short excerpts."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Blog page</h4><p>Blog section with a consistent card layout for each article.</p><a class="text-link" href="work/blogs-newsletters.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/blogs-newsletters.html">Blog page</a></h4></div>
             </li>
             <li class="card item" data-cat="content">
               <a class="frame" data-lightbox href="assets/img/email-newsletter-149.jpg" data-title="The Sextant newsletter, part 1" data-caption="Top of a newsletter issue. The original capture is 149 px wide."><img src="assets/img/email-newsletter-149.jpg" width="149" height="604" loading="lazy" alt="Newsletter email with The Sextant header, a feature story, a blog highlight, and a podcast section."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Newsletter: features and blog</h4><p>Feature story, blog highlight, and podcast section.</p><a class="text-link" href="work/blogs-newsletters.html#newsletter">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/blogs-newsletters.html#newsletter">Newsletter: features and blog</a></h4></div>
             </li>
             <li class="card item" data-cat="content">
               <a class="frame" data-lightbox href="assets/img/email-newsletter-2-148.jpg" data-title="The Sextant newsletter, part 2" data-caption="Featured members and directory section of a newsletter issue. The original capture is 148 px wide."><img src="assets/img/email-newsletter-2-148.jpg" width="148" height="602" loading="lazy" alt="Newsletter section featuring two members with photos and firm logos, followed by a business directory promotion."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Newsletter: featured members</h4><p>Member spotlights and a directory promotion.</p><a class="text-link" href="work/blogs-newsletters.html#newsletter">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/blogs-newsletters.html#newsletter">Newsletter: featured members</a></h4></div>
             </li>
             <li class="card item" data-cat="events ops">
               <a class="frame" data-lightbox href="assets/img/event-eventbrite-list-1350.jpg" data-title="Eventbrite: past events" data-caption="Past roundtable events in Eventbrite, each with scheduled email batches."><img src="assets/img/event-eventbrite-list-800.jpg" width="800" height="375" loading="lazy" alt="Eventbrite list of past online roundtables: Esquire, Attorney Rainmakers, Figure Eight Dealmakers, and Trusted Professional Advisor."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Eventbrite events and email scheduling</h4><p>Recurring online events, each with batches of scheduled emails.</p><a class="text-link" href="work/roundtable-events.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/roundtable-events.html">Eventbrite events and email scheduling</a></h4></div>
             </li>
             <li class="card item" data-cat="events ops">
               <a class="frame" data-lightbox href="assets/img/event-eventbrite-upcoming-1354.jpg" data-title="Eventbrite: upcoming events" data-caption="Upcoming roundtable events on sale in Eventbrite."><img src="assets/img/event-eventbrite-upcoming-800.jpg" width="800" height="374" loading="lazy" alt="Eventbrite list of upcoming online events on sale, including Attorney Rainmakers, Esquire, and a Practice Management Roundtable."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Upcoming event schedule</h4><p>A rolling calendar of roundtables open for registration.</p><a class="text-link" href="work/roundtable-events.html">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/roundtable-events.html">Upcoming event schedule</a></h4></div>
             </li>
             <li class="card item" data-cat="events">
               <a class="frame" data-lightbox href="assets/img/event-linkedin-279.jpg" data-title="LinkedIn events and outreach" data-caption="Past roundtable events on LinkedIn. The original capture is 279 px wide."><img src="assets/img/event-linkedin-279.jpg" width="279" height="606" loading="lazy" alt="LinkedIn events list: past Esquire, Attorney Rainmakers, and Figure Eight Dealmakers roundtables with attendee counts."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>LinkedIn events and outreach</h4><p>Events created on LinkedIn, with outreach to invite attendees.</p><a class="text-link" href="work/roundtable-events.html#linkedin">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/roundtable-events.html#linkedin">LinkedIn events and outreach</a></h4></div>
             </li>
             <li class="card item" data-cat="events creative">
               <a class="frame" data-lightbox href="assets/img/event-layout-1414.jpg" data-title="Event flyer" data-caption="Flyer for the Figure Eight Dealmakers Roundtable."><img src="assets/img/event-layout-700.jpg" width="700" height="990" loading="lazy" alt="Flyer for the Figure Eight Dealmakers Roundtable: meeting-room photo, title, and contact details."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Event flyer</h4><p>Flyer for the Figure Eight Dealmakers Roundtable.</p><a class="text-link" href="work/roundtable-events.html#design">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/roundtable-events.html#design">Event flyer</a></h4></div>
             </li>
             <li class="card item" data-cat="events creative">
               <a class="frame" data-lightbox href="assets/img/event-members-1414.jpg" data-title="Members layout" data-caption="Members layout. Emails and phone numbers are blurred for privacy."><img src="assets/img/event-members-700.jpg" width="700" height="990" loading="lazy" alt="Members layout: six member profiles with photos, names, titles, firms, and logos."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Members layout</h4><p>Member profiles for the Figure Eight Dealmakers Roundtable.</p><a class="text-link" href="work/roundtable-events.html#design">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/roundtable-events.html#design">Members layout</a></h4></div>
             </li>
             <li class="card item" data-cat="events creative">
               <a class="frame" data-lightbox href="assets/img/event-sponsors-1414.jpg" data-title="Event sponsors layout" data-caption="Sponsor layout. Email and phone are blurred for privacy."><img src="assets/img/event-sponsors-700.jpg" width="700" height="990" loading="lazy" alt="Event Sponsors layout featuring a sponsor’s photo, firm logo, role, and short bio."><span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span></a>
-              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4>Event sponsors layout</h4><p>Sponsor spotlight with photo, firm, role, and bio.</p><a class="text-link" href="work/roundtable-events.html#design">Project details <span class="arrow" aria-hidden="true">→</span></a></div>
+              <div class="item-body"><span class="item-client">The Referral Navigator</span><h4><a href="work/roundtable-events.html#design">Event sponsors layout</a></h4></div>
             </li>
           </ul>
           <div class="more-row"><button class="btn" type="button" data-show-all hidden>Show all examples</button></div>
@@ -330,32 +318,36 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="label">Experience</span>
+            <span class="section-index">Experience</span>
             <h2 id="exp-title">Remote roles since 2021</h2>
           </div>
           <p>E-commerce, marketing, events, and executive support for businesses in retail, printing, and professional services.</p>
         </div>
-        <ol class="exp-grid">
-          <li class="card job job--current">
-            <p class="job-when">2021 – 2026</p>
-            <div><h3>E-Commerce Specialist / Online Business Manager</h3><p class="org">ShoeCollection by Memsh</p><p class="desc">Product listings, invoicing and order management, customer service, sales reviews, and Facebook and Instagram campaigns.</p></div>
+        <ol class="timeline2">
+          <li class="tl current reveal">
+            <p class="when">2021 – 2026</p>
+            <div><h3>E-Commerce Specialist / Online Business Manager</h3><p class="org">ShoeCollection by Memsh</p></div>
+            <p class="desc">Product listings, invoicing and order management, customer service, weekly sales reviews, and Facebook and Instagram campaigns.</p>
           </li>
-          <li class="card job job--current">
-            <p class="job-when">2025 – 2026</p>
-            <div><h3>Executive Virtual Assistant</h3><p class="org">Synergy America</p><p class="desc">Executive schedules and meetings, email correspondence and replies, and project task support.</p></div>
+          <li class="tl current reveal">
+            <p class="when">2025 – 2026</p>
+            <div><h3>Executive Virtual Assistant</h3><p class="org">Synergy America</p></div>
+            <p class="desc">Executive schedules and meetings, email correspondence and replies, and project task support.</p>
           </li>
-          <li class="card job">
-            <p class="job-when">2024 – Jun 2025</p>
-            <div><h3>Social Media Manager &amp; Executive Assistant</h3><p class="org">Top Tier Print Company</p><p class="desc">Social media, Etsy listings, invoicing, order tracking, customer relations, and brand graphics.</p></div>
+          <li class="tl reveal">
+            <p class="when">2024 – Jun 2025</p>
+            <div><h3>Social Media Manager &amp; Executive Assistant</h3><p class="org">Top Tier Print Company</p></div>
+            <p class="desc">Social media, Etsy listings, invoicing, order tracking, customer relations, and brand graphics. <a href="work/top-tier-print.html">See project</a></p>
           </li>
-          <li class="card job">
-            <p class="job-when">2023 – 2024</p>
-            <div><h3>Marketing Virtual Assistant</h3><p class="org">The Referral Navigator</p><p class="desc">Websites, blogs, newsletters, and roundtable events: Eventbrite setup, scheduled emails, LinkedIn events and outreach.</p></div>
+          <li class="tl reveal">
+            <p class="when">2023 – 2024</p>
+            <div><h3>Marketing Virtual Assistant</h3><p class="org">The Referral Navigator</p></div>
+            <p class="desc">Websites, blogs, newsletters, and roundtable events with Eventbrite, scheduled emails, and LinkedIn outreach. <a href="work/referral-network.html">See projects</a></p>
           </li>
         </ol>
-        <div class="card exp-foot">
+        <div class="card exp-foot v2">
           <p>Full details, including tools and responsibilities for each role, are in my résumé.</p>
-          <a class="btn btn--small" href="assets/files/Tom-Anthony-Delos-Reyes-Resume.pdf" download>Download résumé (PDF)</a>
+          <a class="btn btn--small" href="assets/files/Tom-Anthony-Delos-Reyes-Resume.pdf" download>Download résumé (PDF, 75 KB)</a>
         </div>
       </div>
     </section>
@@ -365,28 +357,35 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="label">About</span>
+            <span class="section-index">About</span>
             <h2 id="about-title">Systems-minded, from storefront to schedule</h2>
           </div>
         </div>
-        <div class="about-grid">
-          <div class="card about-main">
+        <div class="about2">
+          <div class="card about-main reveal">
+            <p class="lead-quote">I like work with a clear finish line: the order delivered, the event full, the page live.</p>
             <p>I started in e-commerce, running an online store’s listings, orders, and customers, then moved into marketing, websites, events, and executive support.</p>
-            <p>My background is in civil engineering and construction management. It shows in how I work: clear systems, tracked orders, and schedules that hold.</p>
+            <p>My degree is in civil engineering, majoring in construction management. It shows in how I work: clear systems, tracked orders, and schedules that hold.</p>
           </div>
           <div class="about-side">
-            <div class="card">
+            <div class="card reveal">
               <h3>Education</h3>
               <ul class="edu">
-                <li><strong>Bachelor of Science in Civil Engineering, Construction Management</strong><span>University of Science and Technology of Southern Philippines · 2026</span></li>
+                <li><strong>BS Civil Engineering, Construction Management</strong><span>University of Science and Technology of Southern Philippines · 2026</span></li>
               </ul>
             </div>
-            <div class="card">
+            <div class="card reveal">
               <h3>Certifications</h3>
               <ul class="ways">
                 <li>Digital Marketing, Mind Luster</li>
                 <li>Social Media Marketing, Mind Luster</li>
                 <li>Data Entry Management, Mind Luster</li>
+              </ul>
+            </div>
+            <div class="card reveal">
+              <h3>Tools</h3>
+              <ul class="tool-cloud">
+                <li>Etsy</li><li>Trello</li><li>Google Workspace</li><li>Microsoft Office</li><li>Canva</li><li>Adobe Photoshop</li><li>CapCut</li><li>Meta Business Suite</li><li>Eventbrite</li><li>LinkedIn</li><li>Zoom</li><li>AI tools</li>
               </ul>
             </div>
           </div>
@@ -397,41 +396,43 @@
     <!-- ───────── CONTACT ───────── -->
     <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="wrap">
-        <div class="contact-panel">
-          <div class="contact-main">
-            <span class="label">Contact</span>
-            <h2 id="contact-title">Contact me</h2>
-            <p>Hiring for an e-commerce, social media, or virtual assistant role? Email is the fastest way to reach me.</p>
-            <div class="email-box">
-              <a href="mailto:delosreyestomanthony@gmail.com">delosreyestomanthony@gmail.com</a>
-              <button class="btn btn--small" type="button" data-copy="delosreyestomanthony@gmail.com" aria-describedby="copy-status" hidden>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>Copy email
-              </button>
-            </div>
-            <p class="copy-status" id="copy-status" role="status"></p>
-            <div class="contact-actions">
-              <a class="btn btn--accent" href="mailto:delosreyestomanthony@gmail.com?subject=Hello%20Tom%20Anthony">Email me <span class="arrow" aria-hidden="true">→</span></a>
-              <a class="btn" href="assets/files/Tom-Anthony-Delos-Reyes-Resume.pdf" download>Download résumé (PDF)</a>
-            </div>
-            <p class="mailto-note">“Email me” opens your email app with my address filled in. Nothing is sent until you press Send there.</p>
+        <div class="contact2 reveal">
+          <div>
+            <h2 id="contact-title">Let’s work together.</h2>
+            <p class="contact-lead">Hiring for an e-commerce, social media, or virtual assistant role? Email is the fastest way to reach me.</p>
+            <a class="big-mail" href="mailto:delosreyestomanthony@gmail.com">delosreyestomanthony@gmail.com</a>
+            <dl class="contact2-facts">
+              <div><dt>Based in</dt><dd>Cagayan de Oro, PH</dd></div>
+              <div><dt>Time zone</dt><dd>UTC+8</dd></div>
+              <div><dt>Work setup</dt><dd>Remote</dd></div>
+            </dl>
           </div>
-          <dl class="contact-side">
-            <div class="fact"><dt>Based in</dt><dd>Cagayan de Oro City, Philippines</dd></div>
-            <div class="fact"><dt>Time zone</dt><dd>UTC+8 (Philippine Time)</dd></div>
-            <div class="fact"><dt>Work setup</dt><dd>Remote</dd></div>
-          </dl>
+          <div class="contact2-side">
+            <a class="btn btn--accent" href="mailto:delosreyestomanthony@gmail.com?subject=Hello%20Tom%20Anthony">Email me <span class="arrow" aria-hidden="true">→</span></a>
+            <button class="btn" type="button" data-copy="delosreyestomanthony@gmail.com" aria-describedby="copy-status" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>Copy email address
+            </button>
+            <a class="btn" href="assets/files/Tom-Anthony-Delos-Reyes-Resume.pdf" download>Download résumé (PDF)</a>
+            <p class="copy-status" id="copy-status" role="status"></p>
+            <p class="mailto-note">“Email me” opens your email app with my address filled in. Nothing is sent until you press Send.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer v2">
     <div class="wrap">
-      <p>© 2026 Tom Anthony Delos Reyes</p>
-      <p>Work samples from past roles. Private customer, member, and sponsor details are blurred.</p>
+      <p>© 2026 Tom Anthony Delos Reyes · Cagayan de Oro City, Philippines</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="assets/files/Tom-Anthony-Delos-Reyes-Resume.pdf" download>Résumé</a>
+        <a href="mailto:delosreyestomanthony@gmail.com">Email</a>
+      </nav>
     </div>
   </footer>
 
-  <script src="assets/js/site.js?v=1" defer></script>
+  <script src="assets/js/site.js?v=2" defer></script>
 </body>
 </html>

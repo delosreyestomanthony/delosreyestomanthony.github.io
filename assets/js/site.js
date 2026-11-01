@@ -65,7 +65,7 @@
       chip.appendChild(c);
     });
     // "All" starts with the first few examples and a "Show all" button, so the page doesn't scroll forever on phones.
-    var LIMIT = window.matchMedia('(max-width: 600px)').matches ? 6 : 9;
+    var LIMIT = window.matchMedia('(max-width: 760px)').matches ? 6 : 8;
     var expanded = false;
     var showAll = document.querySelector('[data-show-all]');
     var current = 'all';
@@ -196,6 +196,22 @@
       img.removeAttribute('src');
       if (opener) opener.focus();
     });
+  }
+
+  // ── Gentle reveal for sections below the fold ──
+  // Content is hidden only after this script has run, so it can never stay invisible.
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if (revealEls.length && 'IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('is-in'); ro.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('is-in');
+      ro.observe(el);
+    });
+    document.documentElement.classList.add('reveal-ready');
   }
 
   // ── Copy email address ──
