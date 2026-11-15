@@ -212,6 +212,8 @@
       ro.observe(el);
     });
     document.documentElement.classList.add('reveal-ready');
+    // Safety net: if scroll detection never fires (some in-app browsers, preview tools), show everything.
+    setTimeout(function () { revealEls.forEach(function (el) { el.classList.add('is-in'); }); }, 3000);
   }
 
   // ── Copy email address ──
